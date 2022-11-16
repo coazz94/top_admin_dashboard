@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: system-ui;
+    background-color: #9a9b8f;
+}
+
+
+.main{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.heading{
+    display: flex;
+    border: 1px solid black;
+    justify-content:space-around;
+    width:  100%;
+    height: 100px;
+}
+
+.pagebody{
+    display: flex;
+    border: 1px solid black;
+    width:  100vw;
+    height: 85vh;
+}
+
+.sidebar{
+    display: flex;
+    border: 1px solid green;
+    width: 10%;
+
+}
+
+.overview{
+    display: flex;
+    border: 1px solid rgb(248, 50, 0);
+    width: 90%;
+}
+
+#pname, #searchbar{
+    display: flex;
+    border: 1px solid rgb(248, 50, 0);
+    align-items: center;
+}
+
+.rheading {
+    display: flex;
+    border: 1px solid rgb(248, 50, 0);
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+
+
+}
+
+.rheadingel{
+    margin-right: 20px;
+}
