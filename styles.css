@@ -1,20 +1,24 @@
 body {
     margin: 0;
     font-family: system-ui;
-    background-color: #9a9b8f;
+    /* background-color: #14648f; */
+    background-image: url("images/background.jpg");
+    background-size: cover;
 }
 
 
 .main{
     display: flex;
     justify-content: flex-start;
+    /* border: 1px solid rgba(235, 4, 4, 0.771); */
     flex-wrap: wrap;
-    padding: 10px;
+    /* padding: 10px; */
+    width:  99vw;
 }
 
 .heading{
     display: flex;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     justify-content:space-between;
     width:  100%;
     height: 100px;
@@ -23,45 +27,89 @@ body {
 .pagebody{
     display: flex;
     /* border: 1px solid black; */
-    width:  100vw;
+    width:  100%;
     height: 85vh;
-    flex-wrap: wrap;
-
+    /* flex-wrap: wrap; */
 }
 
 .sidebar{
     display: flex;
-    border: 1px solid rgb(0, 0, 0);
+    /* border: 1px solid rgb(185, 11, 11); */
     width: 10%;
     flex-wrap: wrap;
     align-items: flex-start;
-
+    color: rgb(255, 255, 255);
+    font-size: 25px;
 }
-
-
 
 .head {
     display: flex;
     /* border: 1px solid rgb(22, 238, 94); */
     justify-content: center;
     align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
 }
-
 
 .head > div{
     margin-right: 20px;
     /* border: 1px solid rgb(255, 3, 104); */
 }
 
+#sidehead{
+    /* border: 1px solid rgb(2, 199, 87); */
+    display: flex;
+    height: 10%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.sitelinks{
+    display: flex;
+    /* border: 1px solid rgb(28, 179, 22); */
+    width: 100%;
+    height: 90%;
+    justify-content: flex-start;
+}
+
+.links{
+    /* border: 1px solid rgb(3, 0, 207); */
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+
+.overview{
+    display: grid;
+    /* border: 1px solid rgb(248, 50, 0); */
+    width: 85%;
+    padding: 20px;
+    grid-template-rows: repeat(4, calc(94%/4));
+    grid-template-columns: repeat(4, calc(94%/4));
+    gap: 2%;
+}
+
+
+
+.overview > div {
+    /* border: 1px solid brown; */
+}
+
+
 #searchbar {
-    margin-left: 300px;
+    margin-left: 150px;
 }
 
 #pname {
-    margin-left: 50px;
+    margin-left: 10px;
+    text-shadow: rgb(255, 255, 255) 1px 0 1px;
 }
 
-#bellsymbol, #pimg {
+#pimg {
     margin-right: 50px;
 }
 
@@ -69,51 +117,35 @@ body {
     margin-right: 50px;
 }
 
-
-#sidehead{
-    /* border: 1px solid rgb(2, 199, 87); */
-    display: flex;
-    height: 5%;
-    width: 100%;
-    justify-content: center;
+#homeicon{
+    margin-left: 50px;
 }
 
-.sites{
-    display: flex;
-    /* border: 1px solid rgb(221, 67, 25); */
-    width: 100%;
-    height: 90%;
-    justify-content: flex-start;
+#search{
+border: none;
+font-size: 17px;
 }
 
 
-.abc{
-    /* border: 1px solid rgb(3, 0, 207); */
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    flex-direction: column;
-    margin-left: 10px;
+#search:active{
+    background-color: rgb(212, 208, 208);
 }
 
-
-#test{
-    border: 1px solid rgb(21, 41, 199);
-    width: 70%;
+#bell{
+    margin-right: 50px;
+    width: 2rem;
+    height: 2rem;
 }
 
-.overview{
-    display: grid;
-    border: 1px solid rgb(248, 50, 0);
-    width: 85%;
-    padding: 20px;
-    grid-template-rows: repeat(autofit, calc(100%/4));
-    grid-template-columns: repeat(4, calc(100%/4));
-    gap: 2rem;
+#bellsymbol{
+    margin-right: 50px;
 }
 
+#profilepic{
+    width: 4rem;
+    height: 4rem;
+}
 
-
-.overview > div {
-    border: 1px solid brown;
+.links > div{
+    font-size: 16px;
 }
